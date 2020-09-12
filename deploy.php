@@ -7,7 +7,7 @@ require 'recipe/laravel.php';
 set('application', 'hodenius-websocket');
 
 // Project repository
-set('repository', 'git@domain.com:jeroenhodenius/hodenius-websocket.git');
+set('repository', 'git@github.com:jeroenhodenius/hodenius-websocket.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
