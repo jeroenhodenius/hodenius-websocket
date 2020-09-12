@@ -17,6 +17,9 @@
                             <jet-nav-link href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
                                 Dashboard
                             </jet-nav-link>
+                            <jet-nav-link href="/laravel-websockets" :active="$page.currentRouteName == 'generated::YE3JvsEIxiAhYt5O'">
+                                WebSockets
+                            </jet-nav-link>
                         </div>
                     </div>
 
