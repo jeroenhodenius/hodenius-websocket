@@ -14,7 +14,7 @@ class CreateAdminUser extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'admin:create-or-restore-admin';
 
     /**
      * The console command description.
