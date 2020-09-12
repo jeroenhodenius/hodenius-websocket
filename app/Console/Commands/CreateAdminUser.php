@@ -49,7 +49,7 @@ class CreateAdminUser extends Command
             'remember_token' => Str::random(10),
         ]);
 
-        $this->output->success('Created user Jeroen Hodenius')
+        $this->output->success('Created user Jeroen Hodenius');
 
         return true;
     }
