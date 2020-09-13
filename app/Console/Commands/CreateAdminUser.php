@@ -41,24 +41,23 @@ class CreateAdminUser extends Command
      */
     public function handle()
     {
+        $authData = [
+            'password' => Hash::make('.E]?v^2M55@snLEH'),
+            'email_verified_at' => Carbon::parse('2020-09-01 00:00:00'),
+            'remember_token' => Str::random(10),
+        ];
+
         if ($user = User::where('email','jeroenhodenius@gmail.com')->first()) {
             $user
-                ->forceFill([
-                    'password' => Hash::make('.E]?v^2M55@snLEH'),
-                    'email_verified_at' => Carbon::parse('2020-09-01 00:00:00'),
-                    'remember_token' => Str::random(10),
-                ])
+                ->forceFill($authData)
                 ->save();
 
             $this->output->success('Updated user Jeroen Hodenius');
          } else {
-            User::create([
+            User::create(array_merge([
                 'name' => 'Jeroen Hodenius',
-                'email' => 'jeroenhodenius@gmail.com',
-                'password' => Hash::make('.E]?v^2M55@snLEH'),
-                'email_verified_at' => Carbon::parse('2020-09-01 00:00:00'),
-                'remember_token' => Str::random(10),
-            ]);
+                'email' => 'jeroenhodenius@gmail.com'
+            ], $authData));
 
             $this->output->success('Created user Jeroen Hodenius');
         }
