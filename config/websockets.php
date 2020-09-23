@@ -27,7 +27,7 @@ return [
             'name' => 'cuelist-player',
             'key' => 'FUF7fLtaJcFyvjYu',
             'secret' => '5ZYH9vrhg8prXDqw',
-            'path' => '',
+            'path' => 'apps/1',
 //            'capacity' => null,
             'enable_client_messages' => false,
             'enable_statistics' => true,
