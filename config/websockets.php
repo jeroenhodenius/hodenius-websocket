@@ -24,17 +24,22 @@ return [
     'apps' => [
         [
             'id' => '10001',
+            'name' => 'cuelist-player-online',
+            'key' => 'FUF7fLtaJcFyvjYu',
+            'secret' => '5ZYH9vrhg8prXDqw',
+            'enable_client_messages' => false,
+            'enable_statistics' => true,
+        ],
+        [
+            'id' => '10002',
             'name' => 'cuelist-player',
             'key' => 'FUF7fLtaJcFyvjYu',
             'secret' => '5ZYH9vrhg8prXDqw',
-            'path' => 'apps/1',
-//            'capacity' => null,
             'enable_client_messages' => false,
             'enable_statistics' => true,
-//            'encrypted' => true,
         ],
 //        [
-//            'id' => '10002',
+//            'id' => '20001',
 //            'name' => 'hodenius-net',
 //            'key' => 'FUF7fLtaJcFyvjYu',
 //            'secret' => '5ZYH9vrhg8prXDqw',
@@ -45,7 +50,7 @@ return [
 //            'encrypted' => true,
 //        ],
 //        [
-//            'id' => '10003',
+//            'id' => '30001',
 //            'name' => 'incorporate-software',
 //            'key' => 'FUF7fLtaJcFyvjYu',
 //            'secret' => '5ZYH9vrhg8prXDqw',
