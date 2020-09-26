@@ -29,6 +29,7 @@ return [
             'secret' => '5ZYH9vrhg8prXDqw',
             'enable_client_messages' => false,
             'enable_statistics' => true,
+            'encrypted' => true,
         ],
         [
             'id' => '10002',
